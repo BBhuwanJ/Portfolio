@@ -412,19 +412,11 @@ article .icon {
   flex-wrap: wrap;
 }
 
-.color-container {
-  position: relative;
+.color-container details-container {
   border-color: var(--container-border);
   background: var(--primary-color-2);
-  width: 50%;
-
 }
 
-.about-containers {
-  flex-direction: flex;
-  flex-wrap: wrap;
-  /* border: 2px solid red; */
-}
 
 .project-img {
   border-radius: 2rem;
@@ -544,4 +536,9 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+.experience-details-container .about-containers{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }

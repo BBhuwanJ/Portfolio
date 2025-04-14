@@ -7,6 +7,7 @@
   .about-containers {
     flex-wrap: wrap;
   }
+
 }
 
 
@@ -50,6 +51,10 @@
 
   .about-containers {
     margin-top: 0;
+  }
+  .experience-details-container .about-containers{
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -133,5 +138,14 @@
   footer p {
     text-align: center;
   }
+  .about-container {
+    grid-template-columns: 1fr;
+  }
 
+}
+@media (max-width: 768px) {
+  .experience-details-container .about-containers{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
