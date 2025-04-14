@@ -423,7 +423,7 @@ article .icon {
 .about-containers {
   flex-direction: flex;
   flex-wrap: wrap;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .project-img {
