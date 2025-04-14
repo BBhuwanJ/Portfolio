@@ -476,7 +476,7 @@ article .icon {
 }
 
 .contact-form {
-  width: 100%;
+  /* width: 100%; */
   max-width: 500px;
   background-color: #f9f9f9;
   padding: 2rem;
