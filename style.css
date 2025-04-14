@@ -406,13 +406,24 @@ article .icon {
 /* PROJECTS SECTION */
 
 #projects {
+  /* border: 2px solid red; */
   margin-top: 7rem;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .color-container {
+  position: relative;
   border-color: var(--container-border);
   background: var(--primary-color-2);
+  width: 50%;
+
+}
+
+.about-containers {
+  flex-direction: flex;
+  flex-wrap: wrap;
+  border: 2px solid red;
 }
 
 .project-img {
