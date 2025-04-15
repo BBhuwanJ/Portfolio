@@ -5,6 +5,10 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
+// Dynamice Year setting at the Copyright footer
+const date = new Date().getFullYear();
+document.getElementById("copyright_footer").innerHTML = `Copyright &#169; ${date} BBhuwan. All Rights Reserved.`
+
 // Dark / light mode
 
 const btn = document.getElementById("modeToggle");
