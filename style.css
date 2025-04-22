@@ -538,7 +538,7 @@ footer p {
   text-align: center;
 }
 
-.experience-details-container .about-containers{
+.experience-details-container .about-containers {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
