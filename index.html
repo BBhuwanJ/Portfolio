@@ -1,409 +1,280 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bhuwan Prasad Joshi</title>
+    <meta
+      name="description"
+      content="Bhuwan Prasad Joshi is a computer engineering graduate and researcher working on retrieval-augmented generation, information retrieval, and trustworthy AI systems."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body id="top">
+    <div class="page">
+      <aside class="profile">
+        <img class="portrait" src="assets/cover.png" alt="Portrait of Bhuwan Prasad Joshi">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BBhuwan</title>
-  <link rel="icon" href="./assets/profile-pic.png" type="image/x-icon">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="mediaqueries.css" />
-</head>
+        <p class="position">
+          Computer Engineering Graduate<br>
+          Pokhara University
+        </p>
 
-<body theme="dark">
-  <nav id="desktop-nav">
-    <div class="logo">BBhuwan Joshi</div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li>
-          <img id="modeToggle" class="icon color-icon" src="./assets/theme_dark.png"
-            src-light="./assets/theme_light.png" src-dark="./assets/theme_dark.png" alt="Color them icon" />
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <nav id="hamburger-nav">
-    <div class="logo">BBhuwan Joshi</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        <li>
-          <img id="modeToggle2" class="icon color-icon" src="./assets/theme_dark.png"
-            src-light="./assets/theme_light.png" src-dark="./assets/theme_dark.png" alt="Color them icon" />
-        </li>
-      </div>
-    </div>
-  </nav>
-  <section id="profile">
-    <div class="section__pic-container">
-      <img src="./assets/profile-pic.png" alt="BBhuwan Joshi profile picture" />
-    </div>
-    <div class="section__text">
-      <p class="section__text__p1">Namaste🙏, I'm</p>
-      <h1 class="title">BBhuwan Joshi</h1>
-      <p class="section__text__p2">FullStack Developer</p>
-      <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/CV.pdf')">
-          Download CV
-        </button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-          Contact Info
-        </button>
-      </div>
-      <div id="socials-container">
-        <img src="./assets/linkedin_dark.png" src-light="./assets/linkedin_light.png"
-          src-dark="./assets/linkedin_dark.png" alt="My LinkedIn profile" class="icon"
-          onclick="window.open('https://www.linkedin.com/in/bbhuwanjoshi/', '_blank')" />
-        <img src="./assets/github_dark.png" src-light="./assets/github_light.png" src-dark="./assets/github_dark.png"
-          alt="My Github profile" class="icon" onclick="window.open('https://github.com/BBhuwanJ', '_blank')" />
-        <img src="./assets/leetcode_dark.png" src-light="./assets/leetcode_light.png"
-          src-dark="./assets/leetcode_dark.png" alt="My Leetcode profile" class="icon"
-          onclick="window.open('https://leetcode.com/u/BBhuwanJ/', '_blank')" />
-        <img src="./assets/instagram_dark.png" src-light="./assets/instagram_light.png"
-          src-dark="./assets/instagram_dark.png" alt="My Instagram profile" class="icon"
-          onclick="window.open('https://www.instagram.com/erraz07/', '_blank')" />
-        <img src="./assets/x_dark.png" src-light="./assets/x_light.png" src-dark="./assets/x_dark.png"
-          alt="My Twitter profile" class="icon" onclick="window.open('https://x.com/Partime_Thinker', '_blank')" />
-        <img src="./assets/goodreads_dark.png" src-light="./assets/goodreads_light.png"
-          src-dark="./assets/goodreads_dark.png" alt="My Goodreads profile" class="icon"
-          onclick="window.open('https://www.goodreads.com/bbhuwan', '_blank')" />
-        <img src="./assets/medium_dark.png" src-light="./assets/medium_light.png" src-dark="./assets/medium_dark.png"
-          alt="My Goodreads profile" class="icon"
-          onclick="window.open('https://medium.com/@bbhuwanjoshi21', '_blank')" />
-      </div>
-    </div>
-  </section>
-  <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
-      <div class="section__pic-container">
-        <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
-      </div>
-      <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <img src="./assets/experience_dark.png" src-light="./assets/experience_light.png"
-              src-dark="./assets/experience_dark.png" alt="Experience icon" class="icon" />
-            <h3>Experience</h3>
-            <p>1+ years <br />FullStack Development</p>
-          </div>
-          <div class="details-container">
-            <img src="./assets/education_dark.png" src-light="./assets/education_light.png"
-              src-dark="./assets/education_dark.png" alt="Experience icon" class="icon" />
-            <h3>Education</h3>
-            <p>BE Computer Engineering<br />Pokhara Universtiy</p>
-          </div>
-        </div>
-        <div class="text-container">
+        <nav class="contact-list" aria-label="Contact links">
+          <a href="mailto:work.bbhuwan@gmail.com">
+            <span class="icon">@</span>
+            <span>work.bbhuwan@gmail.com</span>
+          </a>
+          <a href="https://github.com/BBhuwanJ">
+            <img class="link-icon" src="assets/github.png" alt="" aria-hidden="true">
+            <span>github.com/BBhuwanJ</span>
+          </a>
+          <a href="https://linkedin.com/in/bbhuwanjoshi">
+            <img class="link-icon" src="assets/linkedin.png" alt="" aria-hidden="true">
+            <span>linkedin.com/in/bbhuwanjoshi</span>
+          </a>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <h1>Bhuwan Prasad Joshi</h1>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#outreach">Outreach</a>
+          <a href="#recognition">Recognition</a>
+          <a href="#personal">Personal</a>
+        </nav>
+
+        <section class="intro">
           <p>
-            I don't know how people define themselves in Tech World. But I am learning new Technologies all the time, If
-            you are wondering whether I am or not... at this moment, Well if I am not travelling, I am definitely
-            working on my mind, or am I sleeping....? Well, Contact me if you want to wake me up, Better If you have a
-            nice project to work upon.
+            I am a Computer Engineering graduate from Pokhara University, Nepal. My work focuses on
+            retrieval-augmented generation, information retrieval, low-resource NLP, and evaluation
+            of grounded AI systems.
           </p>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow_dark.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
-      alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
-  </section>
-  <section id="experience">
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Experience</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Frontend Development</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/bootstrap_dark.png" src-light="./assets/bootstrap_light.png"
-                src-dark="./assets/bootstrap_dark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>BootStrap</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/css_dark.png" src-light="./assets/css_light.png" src-dark="./assets/css_dark.png"
-                alt="Experience icon" class="icon" />
-              <div>
-                <h3>CSS</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/react_dark.png" src-light="./assets/react_light.png" src-dark="./assets/react_dark.png"
-                alt="Experience icon" class="icon" />
-              <div>
-                <h3>React</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/javascript_dark.png" src-light="./assets/javascript_light.png"
-                src-dark="./assets/javascript_dark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>JavaScript</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/typescript_dark.png" src-light="./assets/typescript_light.png"
-                src-dark="./assets/typescript_dark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>TypeScript</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/tailwind_dark.png" src-light="./assets/tailwind_light.png"
-                src-dark="./assets/tailwind_dark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>TailwindCSS</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
+
+          <p>
+            My current research uses Nepali legal text to study how document structure, retrieval
+            quality, evidence coverage, and answer generation interact in legal question answering.
+            I build end-to-end research pipelines from text normalization and document parsing
+            through BM25, FAISS, hybrid retrieval, grounded generation, and component-level
+            evaluation.
+          </p>
+
+          <p>
+            I am seeking a thesis-based MS/MSc research direction focused on knowledge-grounded
+            reasoning, trustworthy RAG, evidence verification, and verification-oriented AI systems.
+          </p>
+        </section>
+
+        <section id="research" class="section">
+          <h2><span>Research</span></h2>
+          <p>
+            My research interests are in retrieval-augmented generation, knowledge-grounded
+            reasoning, low-resource NLP, legal AI, and reliable evaluation of AI systems. I am
+            especially interested in treating RAG as a retrieve, reason, generate, and verify
+            process instead of a simple retrieve-then-generate pipeline.
+          </p>
+
+          <p>
+            In my current work, I compare passage construction and retrieval strategies for
+            grounded question answering over Nepali statutory text. I study how retrieval failures,
+            missing evidence, unsupported reasoning, and generation errors can be separated through
+            component-wise evaluation.
+          </p>
+
+          <div class="accordion">
+            <details>
+              <summary>Research Interests</summary>
+              <ul>
+                <li>Retrieval-augmented generation and grounded question answering</li>
+                <li>Information retrieval, sparse retrieval, dense retrieval, and hybrid retrieval</li>
+                <li>Low-resource and multilingual NLP, with a focus on Nepali legal text</li>
+                <li>Evidence verification, groundedness evaluation, and error analysis</li>
+                <li>Knowledge-grounded reasoning and trustworthy AI systems</li>
+              </ul>
+            </details>
           </div>
-        </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">Backend Development</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/python_dark.png" src-light="./assets/python_light.png"
-                src-dark="./assets/python_dark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Python</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/node_light.png" src-light="./assets/node_light.png" src-dark="./assets/node_dark.png"
-                alt="Experience icon" class="icon" />
-              <div>
-                <h3>Node JS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/express_dark.png" src-light="./assets/express_light.png"
-                src-dark="./assets/express_dark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Express JS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/dotnet_light.png" src-light="./assets/dotnet_light.png"
-                src-dark="./assets/dotnet_dark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>.Net</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
+        </section>
+
+        <section id="publications" class="section">
+          <h2><span>Publications</span></h2>
+          <p>
+            My publications and manuscripts focus on retrieval-augmented generation, legal question
+            answering, evidence coverage, and evaluation design.
+          </p>
+
+          <div class="accordion">
+            <details>
+              <summary>Selected Publications</summary>
+              <ul class="publication-list">
+                <li>
+                  Joshi, Bhuwan Prasad and Bhandari, Anshu. (2026). Evaluating Chunking and
+                  Retrieval Strategies for Nepali Legal Retrieval-Augmented Generation.
+                  <em>The Computer Science Journal</em> (AGH). Submitted.
+                </li>
+                <li>
+                  Joshi, Bhuwan Prasad, Bhandari, Anshu, Bhatta, Ishita, and Shahi, Pradeept
+                  Jarur. (2025). Legal Divorce Chatbot: A Retrieval-Augmented Generation Based
+                  Nepali Legal Question Answering System. <em>IC-AICSE 2026</em>. Submitted.
+                </li>
+              </ul>
+            </details>
           </div>
-        </div>
-      </div>
+        </section>
+
+        <section id="projects" class="section">
+          <h2><span>Projects</span></h2>
+          <p>
+            I build research and software systems around documents, APIs, AI workflows, and
+            repeatable evaluation.
+          </p>
+
+          <div class="accordion">
+            <details>
+              <summary>Nepali Legal Chatbot / LawBot</summary>
+              <p>
+                Built the foundation for a RAG-based Nepali legal chatbot that answers questions
+                from verified legal material. The work includes parsing, chunking, validation,
+                retrieval, and evaluation workflows.
+              </p>
+            </details>
+
+            <details>
+              <summary>AI Code Reviewer</summary>
+              <p>
+                Developed a full-stack code review tool with separate frontend and backend modules
+                for AI-assisted review workflows and structured review feedback.
+              </p>
+            </details>
+
+            <details>
+              <summary>Educational Document Assistant</summary>
+              <p>
+                Built a Python and Streamlit assistant that reads uploaded PDFs and generates
+                flashcards, quizzes, and personalized explanations using repeatable extraction,
+                chunking, and validation components.
+              </p>
+            </details>
+
+            <details>
+              <summary>Stock Market Forecasting Using LSTM and ARIMA</summary>
+              <p>
+                Compared ARIMA and LSTM approaches for stock-price forecasting and built Python
+                preprocessing workflows for sequential financial data.
+              </p>
+            </details>
+          </div>
+        </section>
+
+        <section id="experience" class="section">
+          <h2><span>Experience</span></h2>
+          <div class="accordion">
+            <details>
+              <summary><span>Founders Nepal</span><span class="date">Mar. 2025-Present</span></summary>
+              <p>
+                <strong>Co-Founder.</strong> Develop web applications, API-backed features, and
+                workflow tools using JavaScript, TypeScript, and structured data-validation
+                practices.
+              </p>
+            </details>
+            <details>
+              <summary><span>Bridge Software Solutions</span><span class="date">Jan. 2026-Jun. 2026</span></summary>
+              <p>
+                <strong>Technical Product Manager: Backend and AI Systems.</strong> Coordinated
+                backend, API, workflow, and AI-system features from requirements through
+                implementation, validation, QA, release, and production support.
+              </p>
+            </details>
+
+            <details>
+              <summary><span>株式会社D.Bright</span><span class="date">Sept. 2025-Jan. 2026</span></summary>
+              <p>
+                <strong>AI Automation and System Development.</strong> Worked on automation
+                workflows for extracting, summarizing, validating, deduplicating, and routing
+                unstructured business information.
+              </p>
+            </details>
+
+            <details>
+              <summary><span>AKARUの特徴</span><span class="date">May 2025-Aug. 2025</span></summary>
+              <p>
+                <strong>AI Automation and System Development.</strong> Developed automation
+                workflows for extracting, summarizing, validating, deduplicating, and routing
+                unstructured business information.
+              </p>
+            </details>
+
+            <details>
+              <summary><span>Vedyra</span><span class="date">Dec. 2022-Dec. 2023</span></summary>
+              <p>
+                <strong>Founding AI Engineer.</strong> Developed knowledge-discovery and
+                learning-support workflows, including prompt behavior, validation patterns, and
+                structured responses from unstructured input.
+              </p>
+            </details>
+          </div>
+        </section>
+
+
+        <section id="outreach" class="section">
+          <h2><span>Outreach & Social Work</span></h2>
+          <p>
+            I am an active member of Divine Youth Club Nepal, contributing to youth-led service,
+            life-skills activities, and community support work.
+          </p>
+
+          <div class="accordion">
+            <details>
+              <summary>Divine Youth Club Nepal</summary>
+              <ul>
+                <li>
+                  Coordinated public speaking workshops and youth development sessions to help
+                  participants build confidence, communication skills, and leadership habits.
+                </li>
+                <li>
+                  Participated in warm-clothes distribution initiatives supporting vulnerable
+                  communities during cold weather.
+                </li>
+                <li>
+                  Joined temple-cleaning and community-cleanliness activities to support public
+                  spaces, local heritage, and shared responsibility for the environment.
+                </li>
+                <li>
+                  Supported youth-service activities connected with social service, life skills,
+                  recreation, and community engagement.
+                </li>
+              </ul>
+            </details>
+          </div>
+        </section>
+
+
+        <section id="recognition" class="section">
+          <h2><span>Recognition</span></h2>
+          <p>
+            <strong>Recognition:</strong> Top 10, Hult Prize National Competition Nepal.<br>
+            <strong>Recognition:</strong> Runner-up, Pitch Your Business Idea Season 2.
+          </p>
+        </section>
+
+        <section id="personal" class="section">
+          <h2><span>Personal</span></h2>
+          <p>
+            I enjoy building practical software systems around messy documents, structured
+            workflows, and AI-assisted development. I am also interested in startup work and
+            research communities that connect technical systems with real users.
+          </p>
+        </section>
+      </main>
     </div>
 
-    <div class="about-containers">
-      <div class="details-container">
-        <h2 class="experience-sub-title">Databases </h2>
-        <div class="article-container">
-          <article>
-            <img src="./assets/mongodb_light.png" src-light="./assets/mongodb_light.png"
-              src-dark="./assets/mongodb_dark.png" alt="Experience icon" class="icon" />
-            <div>
-              <h3>Mongodb</h3>
-              <p>Intermediate</p>
-            </div>
-          </article>
-          <article>
-            <img src="./assets/postgre_light.png" src-light="./assets/postgre_light.png"
-              src-dark="./assets/postgre_dark.png" alt="Experience icon" class="icon" />
-            <div>
-              <h3>Postgre SQL</h3>
-              <p>Intermediate</p>
-            </div>
-          </article>
-          <article>
-            <img src="./assets/mysql_light.png" src-light="./assets/mysql_light.png" src-dark="./assets/mysql_dark.png"
-              alt="Experience icon" class="icon" />
-            <div>
-              <h3>mySQL</h3>
-              <p>Intermediate</p>
-            </div>
-          </article>
-        </div>
-      </div>
-      <div class="details-container">
-        <h2 class="experience-sub-title">UI/UX </h2>
-        <div class="article-container">
-          <article>
-            <img src="./assets/figma_light.png" src-light="./assets/figma_light.png" src-dark="./assets/figma_dark.png"
-              alt="Experience icon" class="icon" />
-            <div>
-              <h3>Figma</h3>
-              <p>Experienced</p>
-            </div>
-          </article>
-          <article>
-            <img src="./assets/miro_light.png" src-light="./assets/miro_light.png" src-dark="./assets/miro_dark.png"
-              alt="Experience icon" class="icon" />
-            <div>
-              <h3>Miro</h3>
-              <p>Intermediate</p>
-            </div>
-          </article>
-          <article>
-            <img src="./assets/canva_light.png" src-light="./assets/canva_light.png" src-dark="./assets/canva_dark.png"
-              alt="Experience icon" class="icon" />
-            <div>
-              <h3>Canva</h3>
-              <p>Intermediate</p>
-            </div>
-          </article>
-        </div>
-      </div>
-      <img src="./assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
-        alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
-  </section>
-  <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">FitHub</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://github.com/BBhuwanJ/FitHub', '_blank')" />
-            Github
-            </button>
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://github.com/BBhuwanJ/fithub', '_blank')" />
-            Live Demo
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">TicTacToe</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://github.com/BBhuwanJ/tictactoe', '_blank')" />
-            Github
-            </button>
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://peaceful-churros-3cee71.netlify.app/', '_blank')" />
-            Live Demo
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Netflix Clone</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://github.com/BBhuwanJ/netflix-clone', '_blank')" />
-            Github
-            </button>
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://earnest-lamington-648a7b.netlify.app/', '_blank')" />
-            Live Demo
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-4.png" alt="Project 4" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">LSTM Model for Stock Price Prediction</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://github.com/BBhuwanJ/LSTM-Model', '_blank')" />
-            Github
-            </button>
-            <a
-              href="https://github.com/BBhuwanJ/LSTM-Model/blob/c4586a7098920b3beb31383c28e9631759a47694/SampleData.csv">
-              <button class="btn btn-color-2 project-btn">Download Sample Data</button>
-            </a>
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://bbhuwanj-lstm.streamlit.app/', '_blank')" />
-            Live Demo
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/arima_model.png" alt="Project 4" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">ARIMA Model for Stock Price Prediction</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://github.com/BBhuwanJ/ARIMA-Model-Stock-Prediction', '_blank')" />
-            Github
-            </button>
-            <a
-              href="https://github.com/BBhuwanJ/LSTM-Model/blob/c4586a7098920b3beb31383c28e9631759a47694/SampleData.csv">
-              <button class="btn btn-color-2 project-btn">Download Sample Data</button>
-            </a>
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://bbhuwanj-arima.streamlit.app/', '_blank')" />
-            Live Demo
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
-      alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-  </section>
-  <section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-form-container">
-      <form action="https://formspree.io/f/mvgkvlvg" method="POST" class="contact-form">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required />
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-color-1">Send Message</button>
-      </form>
-    </div>
-  </section>
-  <footer>
-    <p id="copyright_footer">Copyright &#169; 2025 BBhuwan. All Rights Reserved.</p>
-  </footer>
-  <script src="script.js"></script>
-</body>
-
+    <a class="back-top" href="#top" aria-label="Back to top"></a>
+  </body>
 </html>
